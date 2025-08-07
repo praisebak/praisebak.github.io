@@ -356,7 +356,7 @@
 
                             <h3 class="text-2xl font-bold mt-4">최종 일관성 시스템 설계</h3>
 
-                            <p class="text-gray-500">Failover 및 보상 트랜잭션</p>
+                            <p class="text-gray-500">Failover 및 Retry 기반 점진적 가용성 설계</p>
 
                             <div class="mt-4 space-y-2">
                                 <div>
@@ -403,8 +403,8 @@
                             <h4 class="font-bold text-lg text-gray-700">해결 과정</h4>
 
                             <p class="mt-1 mb-4 text-gray-600"><code class="tag">Chain of Responsibility</code> 패턴을 적용하여
-                                OpenAI → Claude 순차 호출하는 Failover 구조를 설계했습니다. <code class="tag">Outbox Pattern</code> 기반
-                                보상 트랜잭션과
+                                OpenAI → Claude 순차 호출하는 Failover 구조를 설계했습니다. <code class="tag">데드레터큐 </code>패턴 기반
+                                재시도 아키텍쳐를 통해
                                 <code class="tag">@Scheduled</code> 재시도 로직(30초 간격)으로 최종 일관성을 보장했습니다.</p>
                             <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-md mb-6">
 
