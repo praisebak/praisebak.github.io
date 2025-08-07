@@ -396,16 +396,16 @@
 
                             <h4 class="font-bold text-lg text-gray-700">문제 상황</h4>
 
-                            <p class="mt-1 mb-4 text-gray-600">외부 API(OpenAI, Claude)의 갑작스러운 장애로 인해 TIL 태그 및 레퍼런스 데이터가
+                            <p class="mt-1 mb-4 text-gray-600">외부 API(OpenAI)의 갑작스러운 장애로 인해 TIL 태그 및 레퍼런스 데이터가
                                 유실되는 치명적인 문제가 발생하여 서비스 신뢰도에
                                 영향을 주었습니다. 일회성 장애로 인한 데이터 무결성 훼손이 주요 이슈였습니다.</p>
 
                             <h4 class="font-bold text-lg text-gray-700">해결 과정</h4>
 
                             <p class="mt-1 mb-4 text-gray-600"><code class="tag">Chain of Responsibility</code> 패턴을 적용하여
-                                OpenAI → Claude 순차 호출하는 Failover 구조를 설계했습니다. <code class="tag">데드레터큐 </code>패턴 기반
+                                OpenAI 실패시 Claude 순차 호출하는 Failover 구조를 설계했습니다. 두 api 요청이 모두 실패시 <code class="tag">데드레터큐 </code>패턴 기반
                                 재시도 아키텍쳐를 통해
-                                <code class="tag">@Scheduled</code> 재시도 로직(30초 간격)으로 최종 일관성을 보장했습니다.</p>
+                                <code class="tag">@Scheduled</code> 재시도 로직으로 최종 일관성을 보장했습니다.</p>
                             <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-md mb-6">
 
                                 <p class="font-bold">성과: 99.9% 서비스 가용성 달성, 외부 API 장애 시에도 데이터 유실 0건</p>
