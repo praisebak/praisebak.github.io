@@ -173,14 +173,18 @@
             <!-- Navigation Links -->
             <div class="hidden md:flex space-x-6">
                 <a class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
-                   href="#project">프로젝트
-                    소개</a>
-                <a class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
-                   href="#architecture">시스템
-                    아키텍처</a>
-                <a class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
                    href="#achievements">핵심
                     성과</a>
+                
+                <a class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
+                href="#architecture">시스템
+                    아키텍처</a>
+
+                    <a class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
+                   href="#project">프로젝트
+                    가치</a>
+                
+                
                 <a class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
                    href="#tech-stack">기술
                     스택</a>
@@ -201,21 +205,23 @@
         <!-- Mobile Menu -->
         <div class="hidden md:hidden pb-4" id="mobile-menu">
             <div class="flex flex-col space-y-2">
-                <a class="nav-link block text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
-                   href="#project">프로젝트
-                    소개</a>
-                <a class="nav-link block text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
-                   href="#architecture">시스템
-                    아키텍처</a>
+               
                 <a class="nav-link block text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
                    href="#achievements">핵심
                     성과</a>
+
+                <a class="nav-link block text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
+                    href="#architecture">시스템
+                     아키텍처</a>
+                <a class="nav-link block text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
+                   href="#project">프로젝트
+                    소개</a>
+               
+               
                 <a class="nav-link block text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
                    href="#tech-stack">기술
                     스택</a>
-                <a class="nav-link block text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
-                   href="#evolution">발전
-                    과정</a>
+               
                 <a class="nav-link block text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
                    href="#education">학력
                     및 경력</a>
@@ -243,7 +249,7 @@
                         사용자 경험과 서비스 안정성을 최우선으로 보장합니다.</p>
                     <p><strong>비동기 처리 및 시스템 아키텍처 개선을 통한 성능 최적화</strong> 경험이 있습니다. 외부 API 호출을 비동기 방식으로 전환하고 Failover와 재시도 큐 패턴 기반 최종적 일관성을 보장합니다.</p>
                     <p><strong>점진적 캐시 아키텍처 개선으로 성능·비용을 함께 최적화</strong>했습니다. 로컬 캐시 도입(응답속도 87%↑), 자료구조 초기 크기 최적화(500MB→400MB, 20%↓), 애플리케이션 메모리 절감 및 캐싱 웜업 문제를 해결하기 위해 캐시 아키텍쳐를 개선하였습니다.</p>
-                    <p><strong>안정적인 서비스 운영과 품질 자동화</strong>를 구축했습니다. Blue-Green 무중단 배포, 정기 백업 자동화, CI/CD 기반 품질 게이트로 테스트 커버리지 92%를 달성했습니다.</p>
+                    <p><strong>안정적인 서비스 운영과 품질 자동화</strong>를 구축했습니다. Blue-Green 무중단 배포, 정기 백업 자동화, CI/CD 기반 품질 게이트로 브랜치 테스트 커버리지 92% 달성 및 코드 스멜을 약 84% 감소시켰습니다.</p>
                 </div>
             </div>
         </div>
@@ -274,6 +280,97 @@
 
             <div class="space-y-12">
 
+                <!-- Achievement 3: Query Performance -->
+
+                <article class="section-card bg-white p-10 rounded-xl shadow-md fade-in-up"
+                         style="animation-delay: 0.8s;">
+
+                    <!-- 상단: 제목 및 성과 -->
+                    <div class="text-center mb-8">
+                        <i class="fas fa-tachometer-alt text-5xl text-indigo-500 mb-4"></i>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-2">점진적 캐시 아키텍처 개선</h3>
+                        <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-md inline-block">
+                            <p class="font-bold">응답속도 <span class="text-xl">87%</span> 개선, 애플리케이션 서버 메모리 부담 <span class="text-xl">50%</span> 절감</p>
+                        </div>
+                        <div class="mt-4">
+                            <a class="text-indigo-600 hover:text-indigo-800 text-sm"
+                               href="https://velog.io/@praisebak/%ED%83%9C%EA%B7%B8-%EA%B2%80%EC%83%89-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A8-20-%EA%B0%9C%EC%84%A0%ED%95%98%EA%B8%B0"
+                               target="_blank">
+                                <i class="fas fa-memory"></i> 메모리 20% 개선
+                            </a>
+                            <a class="text-indigo-600 hover:text-indigo-800 text-sm"
+                               href="https://velog.io/@praisebak/%EB%A7%88%ED%8B%B8%EB%8B%A4-%EC%BA%90%EC%8B%B1-%EC%84%9C%EB%B2%84-%EB%B6%84%EB%A6%AC%EB%A1%9C-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%B6%80%EB%8B%B4-500MB-%EC%A4%84%EC%9D%B4%EA%B8%B0"
+                               target="_blank">
+                                <i class="fas fa-memory"></i> 점진적 캐시 아키텍처 전환
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- 하단: 문제상황(왼쪽) + 해결과정(오른쪽) -->
+                    <div class="md:flex md:space-x-12">
+                        
+
+                        <div style="font-family: Pretendard, sans-serif; line-height: 1.7;">
+                            <h3 style="color: #1f2937; border-left: 4px solid #4f46e5; padding-left: 12px; font-size: 1.5em;">
+                                캐시 아키텍처 개선을 통한 DB 병목 현상 해결기
+                            </h3>
+                        
+                            <p style="color: #4b5563; margin-top: 20px;">
+                                운영 중인 서비스에서 수만 건의 태그 조회 요청이 발생하며 데이터베이스에 심각한 병목 현상이 생겼습니다.
+                                <p> 이로 인해 사용자는 특정 페이지에서 <strong>최대 4초</strong>에 달하는 응답 시간을 경험해야 했습니다. 문제의 빠른 해결과 안정적인 서비스 확장을 목표로, </p>
+                                <p style="color: #4f46e5;">
+                                    총 3단계에 걸쳐 캐시 아키텍처를 점진적으로 개선했습니다.
+                                </p>
+                            </p>
+                        
+                            <div style="margin-top: 30px;">
+                                <h4 style="color: #374151; font-size: 1.2em;">
+                                    1단계: 긴급 대응을 위한 로컬 캐시 도입
+                                </h4>
+                                <ul style="list-style-type: none; padding-left: 0; color: #4b5563;">
+                                    <li style="margin-top: 10px; padding-left: 20px; border-left: 2px solid #ddd6fe;">
+                                        <p><strong>문제 정의:</strong> 당장 해결해야 할 가장 시급한 문제는 DB 부하로 인한 '느린 응답 속도'였습니다.</p>
+                                        <p><strong>해결 과정:</strong> 새로운 기술 스택 도입 없이 가장 빠르게 적용할 수 있는 <code style="background-color: #eef2ff; color: #4338ca; padding: 2px 6px; border-radius: 4px; font-family: 'Fira Code', monospace;">Spring Scheduler</code>를 활용한 로컬 캐시를 구현했습니다. 주기적으로 태그 데이터를 메모리에 적재하여 DB 조회 없이 즉시 반환하도록 설계했습니다.</p>
+                                        <p><strong>결과:</strong> DB를 직접 조회하지 않게 되면서, 태그 조회 API의 <strong style="color: #4f46e5;">응답 속도를 4초에서 0.5초로 87.5% 개선</strong>하여 사용자 경험을 즉각적으로 향상시킬 수 있었습니다.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div style="margin-top: 30px;">
+                                <h4 style="color: #374151; font-size: 1.2em;">
+                                    2단계: 메모리 사용량 최적화
+                                </h4>
+                                <ul style="list-style-type: none; padding-left: 0; color: #4b5563;">
+                                    <li style="margin-top: 10px; padding-left: 20px; border-left: 2px solid #ddd6fe;">
+                                        <p><strong>새로운 문제:</strong> 1단계 해결책은 애플리케이션 메모리를 직접 사용하기 때문에, 캐시 갱신(Warm-up) 시점에 메모리 사용량이 급증하는 새로운 문제를 발견했습니다.</p>
+                                        <p><strong>해결 과정:</strong> 단순히 캐시를 적용하는 것을 넘어, '어떻게 더 효율적으로 사용할까'를 고민했습니다. 캐싱될 데이터의 특성과 도메인 정책을 분석한 결과, <code style="background-color: #eef2ff; color: #4338ca; padding: 2px 6px; border-radius: 4px; font-family: 'Fira Code', monospace;">ArrayList</code>가 내부적으로 배열을 복사하며 크기를 늘리는 과정에서 불필요한 메모리 할당이 발생함을 파악했습니다. 데이터 개수를 예측하여 <strong style="color: #4f46e5;">초기 용량(Initial Capacity)을 최적화</strong>하는 간단하지만 효과적인 해결책을 적용했습니다.</p>
+                                        <p><strong>결과:</strong> 캐시 갱신 시점의 <strong style="color: #4f46e5;">최대 메모리 사용량을 500MB에서 400MB로 20% 절감</strong>하며 애플리케이션의 안정성을 높였습니다.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div style="margin-top: 30px;">
+                                <h4 style="color: #374151; font-size: 1.2em;">
+                                    3단계: 확장성을 고려한 중앙 캐시 아키텍처 전환
+                                </h4>
+                                <ul style="list-style-type: none; padding-left: 0; color: #4b5563;">
+                                    <li style="margin-top: 10px; padding-left: 20px; border-left: 2px solid #ddd6fe;">
+                                        <p><strong>근본적인 한계:</strong> 메모리 최적화에도 불구하고, 로컬 캐시는 애플리케이션 서버에 부담이 매우 크며, 배포마다 캐시가 유지 되지 않는다는 근본적인 한계가 있었습니다.</p>
+                                        <p><strong>해결 과정:</strong> 장기적인 관점에서 확장성과 데이터 일관성을 확보하기 위해 <code style="background-color: #eef2ff; color: #4338ca; padding: 2px 6px; border-radius: 4px; font-family: 'Fira Code', monospace;">Redis</code> 기반의 캐시 아키텍처로 전환을 결정했습니다. 캐시 쓰기 서버를 애플리케이션 서버와 분리 및 외부의 Redis 서버에 저장하여 애플리케이션의 메모리 부담을 줄였습니다.</p>
+                                        <p><strong>결과:</strong> 애플리케이션 서버의 <strong style="color: #4f46e5;">메모리 부담을 50% 이상 절감</strong>하여 EC2 인스턴스 비용 효율을 높였고, 모든 서버가 항상 일관된 캐시 데이터를 사용하게 되어 <strong style="color: #4f46e5;">데이터 정합성</strong> 문제를 원천적으로 해결했습니다.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <blockquote style="margin-top: 40px; border-left: 4px solid #a5b4fc; padding-left: 20px; color: #374151; background-color: #fafbff;">
+                                <p>이 경험을 통해 기술 도입의 트렌드를 맹목적으로 따르기보다, <strong>우리 서비스가 직면한 문제의 본질과 비즈니스 우선순위를 먼저 파악</strong>하는 것이 중요함을 배웠습니다. 긴급도, 자원, 확장성 등 주어진 조건 속에서 최적의 해결책을 찾아나가는 문제 해결 능력을 기를 수 있었습니다.</p>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                </article>
+                
                 <!-- Achievement 1: API Performance -->
 
                 <article class="section-card bg-white p-10 rounded-xl shadow-md fade-in-up"
@@ -436,96 +533,7 @@
                 </article>
 
 
-                <!-- Achievement 3: Query Performance -->
-
-                <article class="section-card bg-white p-10 rounded-xl shadow-md fade-in-up"
-                         style="animation-delay: 0.8s;">
-
-                    <!-- 상단: 제목 및 성과 -->
-                    <div class="text-center mb-8">
-                        <i class="fas fa-tachometer-alt text-5xl text-indigo-500 mb-4"></i>
-                        <h3 class="text-3xl font-bold text-gray-800 mb-2">점진적 캐시 아키텍처 개선</h3>
-                        <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-md inline-block">
-                            <p class="font-bold">응답속도 <span class="text-xl">87%</span> 개선, 애플리케이션 서버 메모리 부담 <span class="text-xl">50%</span> 절감</p>
-                        </div>
-                        <div class="mt-4">
-                            <a class="text-indigo-600 hover:text-indigo-800 text-sm"
-                               href="https://velog.io/@praisebak/%ED%83%9C%EA%B7%B8-%EA%B2%80%EC%83%89-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A8-20-%EA%B0%9C%EC%84%A0%ED%95%98%EA%B8%B0"
-                               target="_blank">
-                                <i class="fas fa-memory"></i> 메모리 20% 개선
-                            </a>
-                            <a class="text-indigo-600 hover:text-indigo-800 text-sm"
-                               href="https://velog.io/@praisebak/%EB%A7%88%ED%8B%B8%EB%8B%A4-%EC%BA%90%EC%8B%B1-%EC%84%9C%EB%B2%84-%EB%B6%84%EB%A6%AC%EB%A1%9C-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%B6%80%EB%8B%B4-500MB-%EC%A4%84%EC%9D%B4%EA%B8%B0"
-                               target="_blank">
-                                <i class="fas fa-memory"></i> 점진적 캐시 아키텍처 전환
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <!-- 하단: 문제상황(왼쪽) + 해결과정(오른쪽) -->
-                    <div class="md:flex md:space-x-12">
-                        
-
-                        <div style="font-family: Pretendard, sans-serif; line-height: 1.7;">
-                            <h3 style="color: #1f2937; border-left: 4px solid #4f46e5; padding-left: 12px; font-size: 1.5em;">
-                                캐시 아키텍처 개선을 통한 DB 병목 현상 해결기
-                            </h3>
-                        
-                            <p style="color: #4b5563; margin-top: 20px;">
-                                운영 중인 서비스에서 수만 건의 태그 조회 요청이 발생하며 데이터베이스에 심각한 병목 현상이 생겼습니다.
-                                <p> 이로 인해 사용자는 특정 페이지에서 <strong>최대 4초</strong>에 달하는 응답 시간을 경험해야 했습니다. 문제의 빠른 해결과 안정적인 서비스 확장을 목표로, </p>
-                                <p style="color: #4f46e5;">
-                                    총 3단계에 걸쳐 캐시 아키텍처를 점진적으로 개선했습니다.
-                                </p>
-                            </p>
-                        
-                            <div style="margin-top: 30px;">
-                                <h4 style="color: #374151; font-size: 1.2em;">
-                                    1단계: 긴급 대응을 위한 로컬 캐시 도입
-                                </h4>
-                                <ul style="list-style-type: none; padding-left: 0; color: #4b5563;">
-                                    <li style="margin-top: 10px; padding-left: 20px; border-left: 2px solid #ddd6fe;">
-                                        <p><strong>문제 정의:</strong> 당장 해결해야 할 가장 시급한 문제는 DB 부하로 인한 '느린 응답 속도'였습니다.</p>
-                                        <p><strong>해결 과정:</strong> 새로운 기술 스택 도입 없이 가장 빠르게 적용할 수 있는 <code style="background-color: #eef2ff; color: #4338ca; padding: 2px 6px; border-radius: 4px; font-family: 'Fira Code', monospace;">Spring Scheduler</code>를 활용한 로컬 캐시를 구현했습니다. 주기적으로 태그 데이터를 메모리에 적재하여 DB 조회 없이 즉시 반환하도록 설계했습니다.</p>
-                                        <p><strong>결과:</strong> DB를 직접 조회하지 않게 되면서, 태그 조회 API의 <strong style="color: #4f46e5;">응답 속도를 4초에서 0.5초로 87.5% 개선</strong>하여 사용자 경험을 즉각적으로 향상시킬 수 있었습니다.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        
-                            <div style="margin-top: 30px;">
-                                <h4 style="color: #374151; font-size: 1.2em;">
-                                    2단계: 메모리 사용량 최적화
-                                </h4>
-                                <ul style="list-style-type: none; padding-left: 0; color: #4b5563;">
-                                    <li style="margin-top: 10px; padding-left: 20px; border-left: 2px solid #ddd6fe;">
-                                        <p><strong>새로운 문제:</strong> 1단계 해결책은 애플리케이션 메모리를 직접 사용하기 때문에, 캐시 갱신(Warm-up) 시점에 메모리 사용량이 급증하는 새로운 문제를 발견했습니다.</p>
-                                        <p><strong>해결 과정:</strong> 단순히 캐시를 적용하는 것을 넘어, '어떻게 더 효율적으로 사용할까'를 고민했습니다. 캐싱될 데이터의 특성과 도메인 정책을 분석한 결과, <code style="background-color: #eef2ff; color: #4338ca; padding: 2px 6px; border-radius: 4px; font-family: 'Fira Code', monospace;">ArrayList</code>가 내부적으로 배열을 복사하며 크기를 늘리는 과정에서 불필요한 메모리 할당이 발생함을 파악했습니다. 데이터 개수를 예측하여 <strong style="color: #4f46e5;">초기 용량(Initial Capacity)을 최적화</strong>하는 간단하지만 효과적인 해결책을 적용했습니다.</p>
-                                        <p><strong>결과:</strong> 캐시 갱신 시점의 <strong style="color: #4f46e5;">최대 메모리 사용량을 500MB에서 400MB로 20% 절감</strong>하며 애플리케이션의 안정성을 높였습니다.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        
-                            <div style="margin-top: 30px;">
-                                <h4 style="color: #374151; font-size: 1.2em;">
-                                    3단계: 확장성을 고려한 중앙 캐시 아키텍처 전환
-                                </h4>
-                                <ul style="list-style-type: none; padding-left: 0; color: #4b5563;">
-                                    <li style="margin-top: 10px; padding-left: 20px; border-left: 2px solid #ddd6fe;">
-                                        <p><strong>근본적인 한계:</strong> 메모리 최적화에도 불구하고, 로컬 캐시는 애플리케이션 서버에 부담이 매우 크며, 배포마다 캐시가 유지 되지 않는다는 근본적인 한계가 있었습니다.</p>
-                                        <p><strong>해결 과정:</strong> 장기적인 관점에서 확장성과 데이터 일관성을 확보하기 위해 <code style="background-color: #eef2ff; color: #4338ca; padding: 2px 6px; border-radius: 4px; font-family: 'Fira Code', monospace;">Redis</code> 기반의 캐시 아키텍처로 전환을 결정했습니다. 캐시 쓰기 서버를 애플리케이션 서버와 분리 및 외부의 Redis 서버에 저장하여 애플리케이션의 메모리 부담을 줄였습니다.</p>
-                                        <p><strong>결과:</strong> 애플리케이션 서버의 <strong style="color: #4f46e5;">메모리 부담을 50% 이상 절감</strong>하여 EC2 인스턴스 비용 효율을 높였고, 모든 서버가 항상 일관된 캐시 데이터를 사용하게 되어 <strong style="color: #4f46e5;">데이터 정합성</strong> 문제를 원천적으로 해결했습니다.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        
-                            <blockquote style="margin-top: 40px; border-left: 4px solid #a5b4fc; padding-left: 20px; color: #374151; background-color: #fafbff;">
-                                <p>이 경험을 통해 기술 도입의 트렌드를 맹목적으로 따르기보다, <strong>우리 서비스가 직면한 문제의 본질과 비즈니스 우선순위를 먼저 파악</strong>하는 것이 중요함을 배웠습니다. 긴급도, 자원, 확장성 등 주어진 조건 속에서 최적의 해결책을 찾아나가는 문제 해결 능력을 기를 수 있었습니다.</p>
-                            </blockquote>
-                        </div>
-                    </div>
-
-                </article>
+                
 
 
                 <!-- Achievement 4: QA & DevOps -->
@@ -725,13 +733,13 @@
                                 <div class="text-center">
                                     <img alt="마틸다 상세 화면" class="w-full rounded-lg shadow-md border clickable-image"
                                          src="./images/matilda-usage-detail.png">
-                                    <p class="text-sm text-gray-600 mt-2">TIL 상세 보기 - AI 기반 태그 및 레퍼런스 생성</p>
+                                    <p class="text-sm text-gray-600 mt-2">집단지성 그래프 검색 기능</p>
                                 </div>
                             </div>
 
                             <div class="bg-indigo-100 border-l-4 border-indigo-500 text-indigo-700 p-4 rounded-md">
                                 <p class="font-bold">성과: Active User <span
-                                        class="text-xl">약 DAU 40명에게 실제 서비스 가치 제공</span>, 안정적인 실시간 서비스 운영 달성
+                                        class="text-xl">약 40명에게 실제 서비스 가치 제공</span>, 안정적인 실시간 서비스 운영 달성
                                 </p>
                             </div>
                         </div>
@@ -964,7 +972,6 @@
                                     <h4 class="text-xl font-bold text-gray-800">CWNU 2024 SW 창업경진대회</h4>
                                     <p class="text-gray-600 mt-2">우수상 수상</p>
                                     <p class="text-pink-600 font-semibold mt-1">2024.12.21</p>
-                                    <p class="text-gray-600 mt-1">깃허브 기반 개발자 협업 관리 애플리케이션 TodayOn</p>
                                     <p class="text-gray-600 mt-1">참여 인원: 3명, 역할: 서비스 기획 및 MVP 개발, 발표 및 팀장</p>
                                 </div>
                             </div>
