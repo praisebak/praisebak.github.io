@@ -172,6 +172,11 @@
 
             <!-- Navigation Links -->
             <div class="hidden md:flex space-x-6">
+
+                <a class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
+                href="#project">프로젝트
+                 소개</a>
+
                 <a class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
                    href="#achievements">핵심
                     성과</a>
@@ -179,11 +184,6 @@
                 <a class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
                 href="#architecture">시스템
                     아키텍처</a>
-
-                    <a class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
-                   href="#project">프로젝트
-                    가치</a>
-                
                 
                 <a class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"
                    href="#tech-stack">기술
@@ -238,23 +238,6 @@
 
         <h1 class="text-4xl md:text-5xl font-bold text-indigo-700">박찬양 | 백엔드 개발자</h1>
 
-        <p class="text-xl md:text-2xl text-gray-600 mt-3">비즈니스 가치를 효율적으로 달성하는데 집중합니다.</p>
-
-        <div class="mt-8 bg-white p-10 rounded-xl shadow-md max-w-7xl mx-auto">
-
-
-            <div class="border-l-4 border-emerald-500 pl-6 bg-emerald-50 p-4 rounded-r-lg">
-                <div class="space-y-3 text-gray-700 text-left">
-                    <p><strong>지금 당장 비즈니스 가치를 효율적으로 달성할 수 있는 방법을 고민</strong>하며, 복잡한 시스템 환경에서의 안정성 확보를 통해 병목이나 장애 상황에서도
-                        사용자 경험과 서비스 안정성을 최우선으로 보장합니다.</p>
-                    <p><strong>비동기 처리 및 시스템 아키텍처 개선을 통한 성능 최적화</strong> 경험이 있습니다. 외부 API 호출을 비동기 방식으로 전환하고 Failover와 재시도 큐 패턴 기반 최종적 일관성을 보장합니다.</p>
-                    <p><strong>점진적 캐시 아키텍처 개선으로 성능·비용을 함께 최적화</strong>했습니다. 로컬 캐시 도입(응답속도 87%↑), 자료구조 초기 크기 최적화(500MB→400MB, 20%↓), 애플리케이션 메모리 절감 및 캐싱 웜업 문제를 해결하기 위해 캐시 아키텍쳐를 개선하였습니다.</p>
-                    <p><strong>안정적인 서비스 운영과 품질 자동화</strong>를 구축했습니다. Blue-Green 무중단 배포, 정기 백업 자동화, CI/CD 기반 품질 게이트로 브랜치 테스트 커버리지 92% 달성 및 코드 스멜을 약 84% 감소시켰습니다.</p>
-                </div>
-            </div>
-        </div>
-
-
         <div class="mt-6 flex justify-center space-x-6 text-2xl">
 
             <a class="text-gray-500 hover:text-indigo-600 transition-colors" href="https://github.com/praisebak"
@@ -269,14 +252,99 @@
 
 
     <main>
+        <!-- Project Introduction Section -->
+        <section class="mt-12" id="project">
+            <h2 class="text-3xl font-bold text-center mb-10 fade-in-up" style="animation-delay: 0.1s;">프로젝트 소개</h2>
 
+            <div class="space-y-8">
+                <!-- Matilda Project -->
+                <article class="section-card bg-white p-10 rounded-xl shadow-md fade-in-up"
+                        style="animation-delay: 0.3s;">
+                    <div class="lg:flex lg:space-x-8">
+                        <!-- 주요 특징 (왼쪽) -->
+
+
+                        <!-- 프로젝트 정보 (중앙) -->
+                        <div class="lg:w-3/3">
+                            <div class="text-center lg:text-left mb-6">
+                                <i class="fas fa-code text-5xl text-indigo-500"></i>
+                                <h3>
+                                    <a class="text-2xl font-bold mt-4 text-indigo-600 hover:text-indigo-800 transition-colors duration-200"
+                                    href="https://matilda.woowacourse.com/all-tag"
+                                    target="_blank">마틸다(Matilda)
+                                    </a>
+                                </h3>
+                                <p class="text-gray-500">2025.04 ~ 2025.07</p>
+                                <a class="text font-bold mt-4 text-indigo-600 hover:text-indigo-800 transition-colors duration-200"
+                                    href="https://matilda.woowacourse.com/all-tag"
+                                    target="_blank">바로가기
+                                </a>
+                                <p></p>
+                                <a class="text font-bold mt-4 text-indigo-600 hover:text-indigo-800 transition-colors duration-200" href="https://github.com/TilGuy/BE_TilGuy" target="_blank">GitHub Repository 링크</a>
+                            </div>
+
+                            <h4 class="font-bold text-lg text-gray-700 mb-4">프로젝트 상세 소개</h4>
+                            <p class="text-gray-600 mb-4">우아한테크코스 과정 중, 약 40명 크루들의 스터디 기록 공유의 불편함을 해소하고자 시작한 교육과정 외 사이드
+                                프로젝트입니다. 개발자 학습 공유 플랫폼으로, 여러 메신저에 파편화된 학습 자료를 AI 기반 태그 자동 분류로 체계적으로 공유하며 집단지성 형성에 도움을 주는
+                                서비스입니다.
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h5 class="font-bold text-gray-700 mb-2"><i
+                                            class="fas fa-users text-indigo-500"></i> 개발 인원</h5>
+                                    <p class="text-gray-600">백엔드 개발자 3명</p>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h5 class="font-bold text-gray-700 mb-2"><i
+                                            class="target text-indigo-500"></i> 핵심 가치</h5>
+                                    <p class="text-gray-600">집단지성 기반 학습 문화 형성</p>
+                                </div>
+                            </div>
+
+                            <h4 class="font-bold text-lg text-gray-700 mb-4 mt-6">서비스 화면</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div class="text-center">
+                                    <img alt="마틸다 메인 화면" class="w-full rounded-lg shadow-md border clickable-image"
+                                        src="./images/matilda-usage-main.png">
+                                    <p class="text-sm text-gray-600 mt-2">마틸다 메인 대시보드 - TIL 목록 및 태그 분류</p>
+                                </div>
+                                <div class="text-center">
+                                    <img alt="마틸다 상세 화면" class="w-full rounded-lg shadow-md border clickable-image"
+                                        src="./images/matilda-usage-detail.png">
+                                    <p class="text-sm text-gray-600 mt-2">집단지성 그래프 검색 기능</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-indigo-100 border-l-4 border-indigo-500 text-indigo-700 p-4 rounded-md">
+                            <ul class="list-disc pl-6 space-y-2 text-base">
+                                <li>
+                                    <strong>AI 기반 태그 자동 분류</strong> 기능을 도입하여, 학습 자료의 체계적 분류 및 검색 효율을 <span class="text-indigo-700 font-semibold">대폭 향상</span>
+                                </li>
+                                <li>
+                                    <strong>집단지성 그래프 검색 기능</strong>을 통해 단순 검색 방식에서 벗어난 개선된 검색 기능 제공
+                                </li>
+                                <li>
+                                    <strong>API 응답 속도 86.7% 개선</strong> (태그 조회 1.5 → 0.2초) 및 <strong>메모리 사용량 20% 절감</strong> 등 <span class="text-indigo-700 font-semibold">성능 최적화</span> 경험
+                                </li>
+                                <li>
+                                    <strong>Spring Scheduler, Redis</strong> 등 <span class="text-indigo-700 font-semibold">캐시 아키텍처</span> 설계 및 개선 경험
+                                </li>
+                                <li>
+                                    <strong>외부 api</strong>에 대한 비동기처리로 <strong>응답속도 90% 개선</strong> 및  <strong>데이터 정합성 99.9% 보장</strong> 
+                                </li>
+                            </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
         <!-- Key Achievements Section -->
 
         <section class="mt-12" id="achievements">
-
-            <h2 class="text-3xl font-bold text-center mb-10 fade-in-up" style="animation-delay: 0.2s;">핵심 성과 | Key
-                Achievements</h2>
+            <h2 class="text-3xl font-bold text-center mb-10 fade-in-up" style="animation-delay: 0.2s;">핵심 성과</h2>
 
             <div class="space-y-12">
 
@@ -284,14 +352,15 @@
 
                 <article class="section-card bg-white p-10 rounded-xl shadow-md fade-in-up"
                          style="animation-delay: 0.8s;">
-
+                    
                     <!-- 상단: 제목 및 성과 -->
                     <div class="text-center mb-8">
                         <i class="fas fa-tachometer-alt text-5xl text-indigo-500 mb-4"></i>
                         <h3 class="text-3xl font-bold text-gray-800 mb-2">점진적 캐시 아키텍처 개선</h3>
                         <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-md inline-block">
-                            <p class="font-bold">응답속도 <span class="text-xl">87%</span> 개선, 애플리케이션 서버 메모리 부담 <span class="text-xl">50%</span> 절감</p>
+                            <p class="font-bold">응답속도 87%</span> 개선, SPOF 위험 해소, 캐싱 웜업 문제 해결</p>
                         </div>
+
                         <div class="mt-4">
                             <a class="text-indigo-600 hover:text-indigo-800 text-sm"
                                href="https://velog.io/@praisebak/%ED%83%9C%EA%B7%B8-%EA%B2%80%EC%83%89-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A8-20-%EA%B0%9C%EC%84%A0%ED%95%98%EA%B8%B0"
@@ -301,66 +370,150 @@
                             <a class="text-indigo-600 hover:text-indigo-800 text-sm"
                                href="https://velog.io/@praisebak/%EB%A7%88%ED%8B%B8%EB%8B%A4-%EC%BA%90%EC%8B%B1-%EC%84%9C%EB%B2%84-%EB%B6%84%EB%A6%AC%EB%A1%9C-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%B6%80%EB%8B%B4-500MB-%EC%A4%84%EC%9D%B4%EA%B8%B0"
                                target="_blank">
-                                <i class="fas fa-memory"></i> 점진적 캐시 아키텍처 전환
+                                <i class="fas fa-memory"></i> 애플리케이션 메모리 50% 이상 절감
                             </a>
                         </div>
                     </div>
 
 
-                    <!-- 하단: 문제상황(왼쪽) + 해결과정(오른쪽) -->
-                    <div class="md:flex md:space-x-12">
-                        
+                    <!-- 하단: 전체 가로 출력 -->
+                    <div class="w-full">
+                        <!-- 문제 상황 -->
+                        <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500 mb-8">
+                            <h4 class="font-bold text-lg text-red-700 mb-4 flex items-center">
+                                <i class="fas fa-exclamation-triangle mr-2"></i>문제 상황
+                            </h4>
+                            <p class="text-gray-600 mb-4">태그 연관관계 조회 및 업데이트 시 수만 건의 데이터 처리로 <strong class="text-red-600">p95 기준 1.5초</strong>의 응답 시간이 소요되어, 전체 페이지 로딩 속도까지 저하시켰습니다. 빈번한 조회로 DB 부하도 증가했습니다.</p>
+                            <div class="flex justify-center mt-4">
+                                <img class="w-full rounded-lg shadow-md border clickable-image" src="./images/cache-init.png" alt="한 api가 1초가량 찍히는 문제">
+                            </div>
+                            <p>  한 api가 1초가량 소요하는 문제</p>
+                        </div>
 
+                        <div class="mt-4 bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                            <pre class="text-sm text-white"><code>
+private TilTagRelations createRecentTagRelations() {
+    LocalDate startDay = LocalDate.now()
+        .minusDays(TAG_GET_START_DAY);
+
+    List<Tag> tags = tilTagService.getRecentWroteTags(startDay)
+        .stream()
+        .filter(tag -> tag.getTil()
+                .isNotDeleted())
+        .toList();
+
+    List<SubTag> subTags = tilTagService.getRecentSubTags(startDay)
+        .stream()
+        .filter(subTag -> subTag.getTag() != null && subTag.getTag()
+                .getTil() != null && subTag.getTag()
+                .getTil()
+                .isNotDeleted())
+        .toList();
+
+    Map<Tag, List<Tag>> tagRelationMap = tagRelationService.getRecentRelationTagMap();
+    log.info(
+        "crated tags size : {} subTags size : {} tagRelationMap size : {} ", tags.size(), subTags.size(),
+        tagRelationMap.size()
+    );
+
+    return new TilTagRelations(tags, subTags, tagRelationMap);
+}
+                            </code></pre>
+                        </div>
+
+                        <p>원인은 위와 같이 데이터베이스에서 여러 태그들을 가져와 추합하여 맵을 만드는 로직이었습니다.</p>
+                        <div class="mt-4 bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                            <pre class="text-sm text-white"><code>
+@Query("""
+    SELECT st FROM SubTag st
+    JOIN FETCH st.tag t
+    JOIN FETCH t.til
+    WHERE st.createdAt >= :start
+""")
+List<SubTag> findByCreatedAtGreaterThanEqual(@Param("start") LocalDateTime recent);
+</code></pre>
+                        </div>
+
+                        <p>N+1 문제가 예상이되어 fetch join 방식으로 쿼리를 수정하였으나, N+1은 해당 현상의 주요 성능 문제는 아니었습니다.</p>
+                        <a class="text-blue-500 hover:text-blue-700" href="https://velog.io/@praisebak/N1%EB%A5%BC-%EA%B0%9C%EC%84%A0%ED%96%88%EB%8A%94%EB%8D%B0-%EC%84%B1%EB%8A%A5%EC%9D%B4-%EB%8D%94-%EB%8A%90%EB%A0%A4%EC%A7%84-%EC%9D%B4%EC%9C%A0">관련글</a>
+
+                    </div>
+
+                        <!-- 해결 과정 -->
                         <div style="font-family: Pretendard, sans-serif; line-height: 1.7;">
                             <h3 style="color: #1f2937; border-left: 4px solid #4f46e5; padding-left: 12px; font-size: 1.5em;">
                                 캐시 아키텍처 개선을 통한 DB 병목 현상 해결기
                             </h3>
                         
-                            <p style="color: #4b5563; margin-top: 20px;">
-                                운영 중인 서비스에서 수만 건의 태그 조회 요청이 발생하며 데이터베이스에 심각한 병목 현상이 생겼습니다.
-                                <p> 이로 인해 사용자는 특정 페이지에서 <strong>최대 4초</strong>에 달하는 응답 시간을 경험해야 했습니다. 문제의 빠른 해결과 안정적인 서비스 확장을 목표로, </p>
-                                <p style="color: #4f46e5;">
-                                    총 3단계에 걸쳐 캐시 아키텍처를 점진적으로 개선했습니다.
-                                </p>
-                            </p>
-                        
-                            <div style="margin-top: 30px;">
-                                <h4 style="color: #374151; font-size: 1.2em;">
-                                    1단계: 긴급 대응을 위한 로컬 캐시 도입
-                                </h4>
-                                <ul style="list-style-type: none; padding-left: 0; color: #4b5563;">
-                                    <li style="margin-top: 10px; padding-left: 20px; border-left: 2px solid #ddd6fe;">
-                                        <p><strong>문제 정의:</strong> 당장 해결해야 할 가장 시급한 문제는 DB 부하로 인한 '느린 응답 속도'였습니다.</p>
-                                        <p><strong>해결 과정:</strong> 새로운 기술 스택 도입 없이 가장 빠르게 적용할 수 있는 <code style="background-color: #eef2ff; color: #4338ca; padding: 2px 6px; border-radius: 4px; font-family: 'Fira Code', monospace;">Spring Scheduler</code>를 활용한 로컬 캐시를 구현했습니다. 주기적으로 태그 데이터를 메모리에 적재하여 DB 조회 없이 즉시 반환하도록 설계했습니다.</p>
-                                        <p><strong>결과:</strong> DB를 직접 조회하지 않게 되면서, 태그 조회 API의 <strong style="color: #4f46e5;">응답 속도를 4초에서 0.5초로 87.5% 개선</strong>하여 사용자 경험을 즉각적으로 향상시킬 수 있었습니다.</p>
-                                    </li>
-                                </ul>
+                            <!-- 1단계: 로컬 캐시 도입 -->
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-indigo-500 mb-6">
+                                <h4 class="text-lg font-bold text-indigo-700 mb-3">🚀 1단계: 긴급 대응을 위한 로컬 캐시 도입</h4>
+                                <div class="space-y-4">
+                                    <div class="bg-white p-4 rounded border-l-4 border-blue-400">
+                                        <h5 class="font-semibold text-blue-700 mb-2">💡 의사결정 과정</h5>
+                                        <p class="text-gray-700 mb-2">데이터베이스 최적화로는 한계에 봉착했고, 그러면서도 새로운 기술 스택 도입 없이 가장 빠르게 적용할 수 있는 방법을 고민했습니다. 태그 관계 생성 로직은 5분마다 갱신되어도 된다는점, 유저의 요청마다 새롭게 갱신할 필요가 없다는점에서 <code class="tag">Spring Scheduler</code>를 활용한 로컬 캐시가 가장 적합하다고 판단했습니다.</p>
+
+                                    </div>
+                                    
+                                    <div class="bg-white p-4 rounded border-l-4 border-green-400">
+                                        <h5 class="font-semibold text-green-700 mb-2">✅ 결과 및 학습</h5>
+                                        <p class="text-gray-700 mb-2">평균 응답 속도를 <strong class="text-indigo-600">1.5초에서 0.2초로 87.5% 개선</strong>하여 사용자 경험을 향상시켰습니다.</p>
+                                    </div>
+                                </div>
                             </div>
-                        
-                            <div style="margin-top: 30px;">
-                                <h4 style="color: #374151; font-size: 1.2em;">
-                                    2단계: 메모리 사용량 최적화
-                                </h4>
-                                <ul style="list-style-type: none; padding-left: 0; color: #4b5563;">
-                                    <li style="margin-top: 10px; padding-left: 20px; border-left: 2px solid #ddd6fe;">
-                                        <p><strong>새로운 문제:</strong> 1단계 해결책은 애플리케이션 메모리를 직접 사용하기 때문에, 캐시 갱신(Warm-up) 시점에 메모리 사용량이 급증하는 새로운 문제를 발견했습니다.</p>
-                                        <p><strong>해결 과정:</strong> 단순히 캐시를 적용하는 것을 넘어, '어떻게 더 효율적으로 사용할까'를 고민했습니다. 캐싱될 데이터의 특성과 도메인 정책을 분석한 결과, <code style="background-color: #eef2ff; color: #4338ca; padding: 2px 6px; border-radius: 4px; font-family: 'Fira Code', monospace;">ArrayList</code>가 내부적으로 배열을 복사하며 크기를 늘리는 과정에서 불필요한 메모리 할당이 발생함을 파악했습니다. 데이터 개수를 예측하여 <strong style="color: #4f46e5;">초기 용량(Initial Capacity)을 최적화</strong>하는 간단하지만 효과적인 해결책을 적용했습니다.</p>
-                                        <p><strong>결과:</strong> 캐시 갱신 시점의 <strong style="color: #4f46e5;">최대 메모리 사용량을 500MB에서 400MB로 20% 절감</strong>하며 애플리케이션의 안정성을 높였습니다.</p>
-                                    </li>
-                                </ul>
+
+                            <div class="flex justify-center my-6">
+                                <img class="w-full rounded-lg shadow-md border clickable-image" src="./images/cache-code.png" alt="로컬 캐시 코드 예시">
+                                
                             </div>
-                        
-                            <div style="margin-top: 30px;">
-                                <h4 style="color: #374151; font-size: 1.2em;">
-                                    3단계: 확장성을 고려한 중앙 캐시 아키텍처 전환
-                                </h4>
-                                <ul style="list-style-type: none; padding-left: 0; color: #4b5563;">
-                                    <li style="margin-top: 10px; padding-left: 20px; border-left: 2px solid #ddd6fe;">
-                                        <p><strong>근본적인 한계:</strong> 메모리 최적화에도 불구하고, 로컬 캐시는 애플리케이션 서버에 부담이 매우 크며, 배포마다 캐시가 유지 되지 않는다는 근본적인 한계가 있었습니다.</p>
-                                        <p><strong>해결 과정:</strong> 장기적인 관점에서 확장성과 데이터 일관성을 확보하기 위해 <code style="background-color: #eef2ff; color: #4338ca; padding: 2px 6px; border-radius: 4px; font-family: 'Fira Code', monospace;">Redis</code> 기반의 캐시 아키텍처로 전환을 결정했습니다. 캐시 쓰기 서버를 애플리케이션 서버와 분리 및 외부의 Redis 서버에 저장하여 애플리케이션의 메모리 부담을 줄였습니다.</p>
-                                        <p><strong>결과:</strong> 애플리케이션 서버의 <strong style="color: #4f46e5;">메모리 부담을 50% 이상 절감</strong>하여 EC2 인스턴스 비용 효율을 높였고, 모든 서버가 항상 일관된 캐시 데이터를 사용하게 되어 <strong style="color: #4f46e5;">데이터 정합성</strong> 문제를 원천적으로 해결했습니다.</p>
-                                    </li>
-                                </ul>
+                            <p>추후에 변경가능성이 높다고 생각하여, 객체 방식으로 구현하였습니다.</p>
+
+                            <!-- 2단계: 메모리 최적화 -->
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-green-500 mb-6">
+                                <h4 class="text-lg font-bold text-green-700 mb-3">⚡ 2단계: 메모리 사용량 최적화</h4>
+                                <div class="space-y-4">
+                                    <div class="flex justify-center my-6">
+                                        <img class="w-full rounded-lg shadow-md border clickable-image" src="./images/memory-max.png" alt="로컬 캐시 코드 예시">
+                                    
+                                    </div>
+                                    <div class="bg-white p-4 rounded border-l-4 border-red-400">
+                                        <h5 class="font-semibold text-red-700 mb-2">📊 새로운 문제 발견</h5>
+                                        <p class="text-gray-700 mb-2">1단계 해결책은 애플리케이션 메모리를 직접 사용하기 때문에, 캐시 갱신(Warm-up) 시점에 메모리 사용량이 급증하는 새로운 문제를 발견했습니다.</p>
+                                    </div>
+                                    
+                                    <div class="bg-white p-4 rounded border-l-4 border-blue-400">
+                                        <h5 class="font-semibold text-blue-700 mb-2">💡 의사결정 과정</h5>
+                                        <p class="text-gray-700 mb-2">새로운 인프라 비용을 들여 해결할 수 있었지만, 우선, '어떻게 더 효율적으로 사용할까'를 고민했습니다. 캐싱될 데이터의 특성과 도메인 정책을 분석하였습니다. 그 결과 태그는 한개당 최대 5개만 존재하기 때문에 <code class="tag">ArrayList</code>의 초기 크기인 10개일 필요가 없었고 초기 가용 크기를 5개로 설정하였습니다.</p>
+                                    </div>
+                                    
+                                    <div class="bg-white p-4 rounded border-l-4 border-green-400">
+                                        <h5 class="font-semibold text-green-700 mb-2">✅ 결과</h5>
+                                        <img class="w-full rounded-lg shadow-md border clickable-image" src="./images/memory-better.png" alt="로컬 캐시 코드 예시">
+                                        <p class="text-gray-700 mb-2">도메인 정책을 기반으로<strong class="text-green-600">초기 용량(Initial Capacity)을 최적화</strong>하는 간단하지만 효과적인 해결책을 적용하였고 700-> 600MB로 100MB 가량 절약할 수 있었습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3단계: Redis 전환 -->
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-purple-500 mb-6">
+                                <h4 class="text-lg font-bold text-purple-700 mb-3">🔄 3단계: 확장성을 고려한 중앙 캐시 아키텍처 전환</h4>
+                                <div class="space-y-4">
+                                    <div class="bg-white p-4 rounded border-l-4 border-red-400">
+                                        <h5 class="font-semibold text-red-700 mb-2">📊 근본적 한계 인식</h5>
+                                        <p class="text-gray-700 mb-2">메모리 최적화에도 불구하고, 로컬 캐시는 애플리케이션 서버에 부담이 매우 크며, 배포마다 캐시가 초기화되며 추가적인 비용이 드는 <code class="tag">캐싱 웜업</code> 문제가 있었습니다. 또한 서버가 확장되는 경우에 일관되지 않는 캐시 문제도 예상되었습니다.</p>
+                                    </div>
+                                    
+                                    <div class="bg-white p-4 rounded border-l-4 border-blue-400">
+                                        <h5 class="font-semibold text-blue-700 mb-2">💡 의사결정 과정</h5>
+                                        <p class="text-gray-700 mb-2">장기적인 관점에서 확장성과 데이터 일관성을 확보하기 위해 <code class="tag">Redis</code> 기반의 캐시 아키텍처로 전환을 결정했습니다. 또한 캐시 쓰기 서버를 애플리케이션 서버와 분리하여 애플리케이션의 메모리 부담을 줄였습니다.</p>
+                                    </div>
+                                    
+                                    <img class="w-full rounded-lg shadow-md border clickable-image" src="./images/memory-distri.png" alt="로컬 캐시 코드 예시">
+                                    <div class="bg-white p-4 rounded border-l-4 border-green-400">
+                                        <h5 class="font-semibold text-green-700 mb-2">✅ 결과</h5>
+                                        <p class="text-gray-700 mb-2">애플리케이션 서버의 <strong class="text-purple-600">메모리 부담을 50% 이상 절감</strong>하여 EC2 인스턴스 비용 효율을 높였고, 모든 서버가 항상 일관된 캐시 데이터를 사용하게 되어 <strong>데이터 정합성</strong> 문제를 원천적으로 해결했습니다.</p>
+                                    </div>
+                                </div>
                             </div>
                         
                             <blockquote style="margin-top: 40px; border-left: 4px solid #a5b4fc; padding-left: 20px; color: #374151; background-color: #fafbff;">
@@ -371,7 +524,7 @@
 
                 </article>
                 
-                <!-- Achievement 1: API Performance -->
+                <!-- Achievement 1: API Performance & System Reliability -->
 
                 <article class="section-card bg-white p-10 rounded-xl shadow-md fade-in-up"
                          style="animation-delay: 0.4s;">
@@ -379,161 +532,187 @@
                     <!-- 상단: 제목 및 성과 -->
                     <div class="text-center mb-8">
                         <i class="fas fa-rocket text-5xl text-indigo-500 mb-4"></i>
-                        <h3 class="text-3xl font-bold text-gray-800 mb-2">비동기 처리로 API 응답 속도 90% 개선</h3>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-2">비동기 처리 개선 및 데이터 정합성 확보</h3>
                         <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-md inline-block">
-                            <p class="font-bold">성과: p99 응답 시간 <span class="text-xl">13초 → 0.6초</span>로 90% 단축</p>
+                            <p class="font-bold">성과: API 응답 속도 <span class="text-xl">90%</span> 개선 + <span class="text-xl">99.9%</span> 시스템 가용성 달성</p>
                         </div>
                         <div class="mt-4">
-
                             <a class="text-indigo-600 hover:text-indigo-800 text-sm"
                                href="https://github.com/TilGuy/BE_TilGuy/issues/158"
                                target="_blank">
                                 <i class="fab fa-github"></i> 관련 이슈 #158
                             </a>
-                        </div>
-                    </div>
-
-                    <!-- 하단: 문제상황(왼쪽) + 해결과정(오른쪽) -->
-                    <div class="md:flex md:space-x-8">
-                        <!-- 왼쪽: 문제 상황 -->
-                        <div class="md:w-1/2 mb-6 md:mb-0">
-                            <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
-                                <h4 class="font-bold text-lg text-red-700 mb-4 flex items-center">
-                                    <i class="fas fa-exclamation-triangle mr-2"></i>문제 상황
-                                </h4>
-                                <p class="text-gray-600 mb-4">운영서버내 외부 API(OpenAI, Claude)와의 동기 통신으로 인한 병목으로
-                                    p99 응답 시간이 최대 13초까지 증가하여 사용자 경험이 크게 저하되었습니다.
-                                </p>
-
-                                     </p>태그 생성, 레퍼런스 생성을 순차 처리하여 단일 요청에도 평균
-                                    3~5초가 소요되었습니다.</p>
-
-                                
-                                <br>
-                                <a href="https://github.com/TilGuy/BE_TilGuy/issues/158">관련 이슈</a>
-                                <p class="text-sm text-gray-600 mt-2">p99 기준 13초 소요되는 API 포착</p>
-                                <div class="flex justify-center">
-
-                                    <img
-                                            class="w-full rounded-lg shadow-md border clickable-image"
-                                            src="./images/api-performance-issue.png">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 오른쪽: 해결 과정 -->
-                        <div class="md:w-1/2">
-                            <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-                                <h4 class="font-bold text-lg text-blue-700 mb-4 flex items-center">
-                                    <i class="fas fa-lightbulb mr-2"></i>해결 과정
-                                </h4>
-                                <p >@TransactionalEventListener를 활용하여 외부 API 호출(태그 생성, 레퍼런스 생성)을 비동기로 처리하여
-                                </p>
-                                <br>
-                                <p>TIL 생성 후 즉시 응답을 반환하고, 부가 기능들은 백그라운드에서 처리하여 응답 시간을 <strong>p99 기준 <span class="text-indigo-700">13초 → 0.6초</span></strong> 단축했습니다.</p>
-                                <br>
-                                <div class="flex justify-center">
-
-                                    <img
-                                            class="w-full rounded-lg shadow-md border clickable-image"
-                                            src="./images/transaction_code.png">
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                </article>
-
-
-                <!-- Achievement 2: System Reliability -->
-
-                <article class="section-card bg-white p-10 rounded-xl shadow-md fade-in-up"
-                         style="animation-delay: 0.6s;">
-
-                    <!-- 상단: 제목 및 성과 -->
-                    <div class="text-center mb-8">
-                        <i class="fas fa-shield-alt text-5xl text-indigo-500 mb-4"></i>
-                        <h3 class="text-3xl font-bold text-gray-800 mb-2">Failover 및 재시도 큐 아키텍쳐 설계</h3>
-                        <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-md inline-block">
-                            <p class="font-bold">외부 시스템 장애로부터 데이터 유실 방지, 최종적 일관성(Eventual Consistency) 보장</p>
-                        </div>
-                        <div class="mt-4 flex justify-center space-x-6">
-                            <a class="text-indigo-600 hover:text-indigo-800 text-sm"
+                            <a class="text-indigo-600 hover:text-indigo-800 text-sm ml-4"
                                href="https://github.com/TilGuy/BE_TilGuy/issues/167"
                                target="_blank">
                                 <i class="fab fa-github"></i> 관련 이슈 #167
                             </a>
-                            <a class="text-indigo-600 hover:text-indigo-800 text-sm"
-                               href="https://velog.io/@praisebak/failover-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%95%84%EC%9B%83%EB%B0%95%EC%8A%A4-%EA%B0%80%EC%9A%A9%EC%84%B1-99-%EB%8F%84%EC%9E%85%EA%B8%B0"
-                               target="_blank">
-                                <i class="fas fa-blog"></i> 기술 블로그
-                            </a>
                         </div>
                     </div>
 
-                    <!-- 하단: 문제상황(왼쪽) + 해결과정(오른쪽) -->
-                    <div class="md:flex md:space-x-8">
-                        <!-- 왼쪽: 문제 상황 -->
-                        <div class="md:w-1/2 mb-6 md:mb-0">
-                            <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
-                                <h4 class="font-bold text-lg text-red-700 mb-4 flex items-center">
-                                    <i class="fas fa-exclamation-triangle mr-2"></i>문제 상황
-                                </h4>
-                                <p class="text-gray-600 mb-4">외부 API(OpenAI, Claude)의 갑작스러운 장애로 인해 TIL 태그 및 레퍼런스 데이터가
-                                    유실되는 치명적인 문제가 발생하여 서비스 제공에 영향을 주었습니다.
-                                    </p>
-                                    <br> <p>외부 시스템의 일회성 장애로 인한 데이터 정합성 훼손이 주요 이슈였습니다.</p>
-
-                                <!-- 시스템 동작 예시 이미지 -->
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div class="text-center">
-                                        <img alt="레퍼런스 생성 결과" class="w-full rounded-lg shadow-md border clickable-image"
-                                             src="./images/matilda-reference-success.png">
-                                        <p class="text-sm text-gray-600 mt-2">정상적인 호출(태그,레퍼런스있음)</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <img alt="태그 생성 결과" class="w-full rounded-lg shadow-md border clickable-image"
-                                             src="./images/matilda-tag-missing.png">
-                                        <p class="text-sm text-gray-600 mt-2">사용자 데이터 유실된 경우(태그,레퍼런스없음)</p>
-                                    </div>
-                                </div>
-
-                                
+                    <!-- 하단: 전체 가로 출력 -->
+                    <div class="w-full">
+                        <!-- 1단계: 초기 문제 상황 -->
+                        <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500 mb-8">
+                            <h4 class="font-bold text-lg text-red-700 mb-4 flex items-center">
+                                <i class="fas fa-exclamation-triangle mr-2"></i>1단계: 초기 문제 상황
+                            </h4>
+                            <p class="text-gray-600 mb-4">운영서버내 외부 API(OpenAI, Claude)와의 동기 통신으로 인한 병목으로
+                                p99 응답 시간이 최대 13초까지 증가하여 사용자 경험이 크게 저하되었습니다.
+                            </p>
+                            <p>태그 생성, 레퍼런스 생성을 순차 처리하여 단일 요청에도 평균 3~5초가 소요되었습니다.</p>
+                            <br>
+                            <a href="https://github.com/TilGuy/BE_TilGuy/issues/158">관련 이슈</a>
+                            <p class="text-sm text-gray-600 mt-2">p99 기준 13초 소요되는 API 포착</p>
+                            <div class="flex justify-center">
+                                <img class="w-full rounded-lg shadow-md border clickable-image" src="./images/api-performance-issue.png">
                             </div>
                         </div>
 
-                        <!-- 오른쪽: 해결 과정 -->
-                        <div class="md:w-1/2">
-                            <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-                                <h4 class="font-bold text-lg text-blue-700 mb-4 flex items-center">
-                                    <i class="fas fa-lightbulb mr-2"></i>해결 과정
-                                </h4>
-                                <p class="text-gray-600 mb-4">Chain of Responsibility 패턴을 적용하여
+                        <!-- 2단계: 비동기 처리로 성능 개선 -->
+                        <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 mb-8">
+                            <h4 class="font-bold text-lg text-blue-700 mb-4 flex items-center">
+                                <i class="fas fa-lightbulb mr-2"></i>2단계: 비동기 처리로 성능 개선
+                            </h4>
+                            <p>위 문제는 외부 api 서버의 상태에 따라 응답시간이 늘어나는 것이 문제였습니다.
+                            </p>
+                            <p>
+                            기능 특성상 유저는 지금 당장 태그가 생성되지 않더라도 태그가 생성되기만 하면 되므로, 동기방식에서 비동기로 전환하는 것을 꾀했습니다.
+                            </p>
 
-                                    실패시 다음 외부 시스템을 순차 호출하는 Failover</code> 구조를 설계 했습니다.</p>
-                                <p> <strong>Failover에서도 실패시 재시도 큐에 실패 이벤트를 저장하여</strong>
-                                    스케줄링 기반의 재시도 로직으로 <strong><span class="text-indigo-500">외부 API 최종 일관성을 보장했습니다.</span></strong>
+                            <p>이를 위해서 이벤트 리스너 방식으로 외부 API 호출(태그 생성, 레퍼런스 생성)을 비동기로 처리하였고</p>
+                            <br>
+                            <p>응답 시간을 <strong>p99 기준 <span class="text-indigo-700">13초 → 0.6초</span></strong> 단축했습니다.</p>
+                            <br>
+                                <div class="mt-4 bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                                    <pre class="text-sm text-white"><code>
+&#64;TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)
+&#64;Async("tilTagTaskExecutor")
+public void handleTilReferenceExtractionRequested(TilCreatedEvent tilCreatedEvent) {
+    tilTagService.createTags(tilCreatedEvent);
+}
+                                    </code></pre>
+                                </div>
+                                <p>코드</p>
+
+                            <div class="flex justify-center">
+                                <img class="w-full rounded-lg shadow-md border clickable-image" src="./images/after-async.png">
+                            </div>
+                            <p>개선된 결과</p>
+                        </div>
+
+                          <!-- 시스템 동작 예시 이미지 -->
+                          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="text-center">
+                                <img alt="레퍼런스 생성 결과" class="w-full rounded-lg shadow-md border clickable-image"
+                                     src="./images/matilda-reference-success.png">
+                                <p class="text-sm text-gray-600 mt-2">정상적인 호출(태그,레퍼런스있음)</p>
+                            </div>
+                            <div class="text-center">
+                                <img alt="태그 생성 결과" class="w-full rounded-lg shadow-md border clickable-image"
+                                     src="./images/matilda-tag-missing.png">
+                                <p class="text-sm text-gray-600 mt-2">사용자 데이터 유실된 경우(태그,레퍼런스없음)</p>
+                            </div>
+                        </div>
+                        <!-- 3단계: 새로운 문제 발견 및 Failover 필요성 -->
+                        <div class="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-500 mb-8">
+                            <h4 class="font-bold text-lg text-orange-700 mb-4 flex items-center">
+                                <i class="fas fa-exclamation-circle mr-2"></i>3단계: 새로운 문제 발견 - 시스템 안정성 위협
+                            </h4>
+                            <p class="text-gray-600 mb-4">비동기 처리로 성능은 개선되었지만, <strong>외부 API(OpenAI, Claude)의 갑작스러운 장애로 인해 TIL 태그 및 레퍼런스 데이터가 유실되는 치명적인 문제가 발생</strong>하여 서비스 제공에 영향을 주었습니다.</p>
+                            <p class="text-gray-600 mb-4">외부 시스템의 일회성 장애로 인한 <strong>데이터 정합성 훼손이 주요 이슈</strong>였습니다. 성능 개선은 했지만, 시스템 안정성 측면에서 새로운 도전과제가 생겼습니다.</p>
+                        </div>
+
+                        <!-- 4단계: Failover 및 재시도 큐로 시스템 안정성 확보 -->
+                        <div style="font-family: Pretendard, sans-serif; line-height: 1.7;">
+                            <h4 class="font-bold text-lg text-green-700 mb-4 flex items-center">
+                                <i class="fas fa-shield-alt mr-2"></i>4단계: Failover 및 재시도 큐로 시스템 안정성 확보
+                            </h4>
+                        
+                            <!-- 4-1: Chain of Responsibility 패턴 적용 -->
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-indigo-500 mb-6">
+                                <h5 class="text-lg font-bold text-indigo-700 mb-3">🔄 4-1: Chain of Responsibility 패턴 기반 Failover 구조</h5>
+                                <div class="space-y-4">
+                                    <div class="bg-white p-4 rounded border-l-4 border-red-400">
+                                        <h6 class="font-semibold text-red-700 mb-2">📊 문제 상황 분석</h6>
+                                        <p class="text-gray-700 mb-2">외부 API(OpenAI, Claude)의 갑작스러운 장애로 인해 TIL 태그 및 레퍼런스 데이터가 유실되는 치명적인 문제가 발생했습니다. 단일 외부 시스템에 의존하는 구조는 99.9% 가용성 요구사항을 충족할 수 없었습니다.</p>
+                                    </div>
                                     
-                                <p/><p>
-                                    외부 API 의존 기능에도 99.9% 가용성을 확보하는데 성공하였습니다.
-                                </p>
-                                <br>
-                                    <img
-                                    class="w-full rounded-lg shadow-md border clickable-image"
-                                    src="./images/outbox.png">
-                                    <img
-                                    class="w-full rounded-lg shadow-md border clickable-image"
-                                    src="./images/failover.png">
+                                    <div class="bg-white p-4 rounded border-l-4 border-blue-400">
+                                        <h6 class="font-semibold text-blue-700 mb-2">💡 의사결정 과정</h6>
+                                        <p class="text-gray-700 mb-2">외부 시스템 장애 시에도 서비스 연속성을 보장하기 위해 <code class="tag">Chain of Responsibility</code> 패턴을 적용했습니다. 실패 시 다음 외부 시스템을 순차적으로 호출하는 구조로 설계하여 단일 실패 지점을 제거했습니다.</p>
+                                        
+                                        <!-- 실제 구현 코드 -->
+                                        <div class="mt-4 bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                                            <pre class="text-sm text-green-400"><code>public String callAIWithSimpleFallback(
+    List&lt;Map&lt;String, Object&gt;&gt; messages,
+    Map&lt;String, Object&gt; functionDefinition
+) {
+    for (AIClient client : aiClients) {
+        try {
+            log.info("Attempting to call {} API", client.getClientName());
+            String result = client.callAI(messages, functionDefinition);
+            log.info("Successfully called {} API", client.getClientName());
+            return result;
+
+        } catch (Exception e) {
+            log.warn("Failed to call {} API: {}", client.getClientName(), e.getMessage());
+            if (isLastClient(client)) {
+                throw new RuntimeException("All AI services failed", e);
+            }
+            log.info("Trying next AI service");
+        }
+    }
+
+    throw new RuntimeException("No available AI services");
+}</code></pre>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-white p-4 rounded border-l-4 border-green-400">
+                                        <h6 class="font-semibold text-green-700 mb-2">✅ 결과 및 학습</h6>
+                                        <p class="text-gray-700 mb-2">외부 API 장애 시에도 <strong class="text-indigo-600">99.9% 가용성</strong>을 확보하여 사용자 데이터 유실을 방지했습니다. 다중 외부 시스템 활용으로 서비스 안정성이 크게 향상되었습니다.</p>
+                                    </div>
+                                </div>
                             </div>
 
+                            <!-- 4-2: 재시도 큐 아키텍처 구현 -->
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-green-500 mb-6">
+                                <h5 class="text-lg font-bold text-green-700 mb-3">⚡ 4-2: 재시도 큐를 통한 최종 일관성 보장</h5>
+                                <div class="space-y-4">
+                                    <div class="bg-white p-4 rounded border-l-4 border-red-400">
+                                        <h6 class="font-semibold text-red-700 mb-2">📊 새로운 문제 발견</h6>
+                                        <p class="text-gray-700 mb-2">Failover 구조로도 모든 외부 시스템이 동시에 장애가 발생할 수 있었습니다. 이 경우 사용자 데이터가 영구적으로 유실될 위험이 있었고, 일시적 장애 후 복구 시에도 데이터 정합성을 보장할 수 없었습니다.</p>
+                                    </div>
+                                    
+                                    <div class="bg-white p-4 rounded border-l-4 border-blue-400">
+                                        <h6 class="font-semibold text-blue-700 mb-2">💡 의사결정 과정</h6>
+                                        <p class="text-gray-700 mb-2">모든 외부 시스템이 실패할 경우를 대비하여 <code class="tag">스케줄링 기반 재시도 큐 재처리 아키텍처</code>를  설계했습니다. 실패한 이벤트를 큐에 저장하고 <code class="tag">@Scheduled</code> 기반의 재시도 로직으로 최종적 일관성(Eventual Consistency)을 보장했습니다.</p>
+                                    </div>
+                                    
+                                    <div class="bg-white p-4 rounded border-l-4 border-green-400">
+                                        <h6 class="font-semibold text-green-700 mb-2">✅ 결과</h6>
+                                        <p class="text-gray-700 mb-2">외부 시스템의 일시적 장애에도 <strong class="text-green-600">데이터 유실을 완전히 방지</strong>하고, 시스템 복구 후 자동으로 데이터 정합성을 복원할 수 있게 되었습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                            <!-- 시스템 아키텍처 이미지 -->
+                            <div class="flex justify-center my-6">
+                                <img class="w-full rounded-lg shadow-md border clickable-image" src="./images/outbox.png" alt="재시도 큐 아키텍처">
+                            </div>
+                            <p class="text-center text-gray-600 mb-4">재시도 큐 패턴 로직 코드</p>
+                            
+                            <div class="flex justify-center my-6">
+                                <img class="w-full rounded-lg shadow-md border clickable-image" src="./images/failover.png" alt="Failover 구조">
+                            </div>
+                            <p class="text-center text-gray-600"> 다이어그램</p>
                         </div>
                     </div>
 
                 </article>
-
-
-                
 
 
                 <!-- Achievement 4: QA & DevOps -->
@@ -557,76 +736,61 @@
                         </div>
                     </div>
 
-                    <!-- 하단: 문제상황(왼쪽) + 해결과정(오른쪽) -->
-                    <div class="md:flex md:space-x-8">
-                        <!-- 왼쪽: 이미지들 -->
-                        <div class="md:w-1/3 mb-6 md:mb-0">
-                            <div class="space-y-4">
-                                <div class="text-center">
-                                    <img alt="테스트 커버리지 개선 전"
-                                         class="w-full rounded-lg shadow-md border clickable-image"
-                                         src="./images/performance-before.png">
-                                    <p class="text-sm text-gray-600 mt-2">테스트 커버리지 23% → 92% 개선</p>
-                                </div>
-                                <div class="text-center">
-                                    <img alt="코드 품질 지표" class="w-full rounded-lg shadow-md border clickable-image"
-                                         src="./images/performance-after.png">
-                                    <p class="text-sm text-gray-600 mt-2">SonarQube 코드 품질 관리</p>
-                                </div>
-                                <div class="text-center">
-                                    <img alt="배포 당시"
-                                         class="w-full rounded-lg shadow-md border clickable-image"
-                                         src="./images/sonarqube-quality.png">
-                                    <p class="text-sm text-gray-600 mt-2">릴리즈 1.0 배포 D-day</p>
-                                </div>
-                                <div class="text-center">
-                                    <img alt="사용자 피드백 및 개선사항"
-                                         class="w-full rounded-lg shadow-md border clickable-image"
-                                         src="./images/feedbacks.png">
-                                    <p class="text-sm text-gray-600 mt-2">UT 결과 사용자 피드백</p>
-                                </div>
+                    <!-- 하단: 전체 가로 출력 -->
+                    <div class="w-full">
+                        <!-- 이미지들 -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                            <div class="text-center">
+                                <img alt="테스트 커버리지 개선 전" class="w-full rounded-lg shadow-md border clickable-image" src="./images/performance-before.png">
+                                <p class="text-sm text-gray-600 mt-2">테스트 커버리지 23% → 92% 개선</p>
+                            </div>
+                            <div class="text-center">
+                                <img alt="코드 품질 지표" class="w-full rounded-lg shadow-md border clickable-image" src="./images/performance-after.png">
+                                <p class="text-sm text-gray-600 mt-2">SonarQube 코드 품질 관리</p>
+                            </div>
+                            <div class="text-center">
+                                <img alt="배포 당시" class="w-full rounded-lg shadow-md border clickable-image" src="./images/sonarqube-quality.png">
+                                <p class="text-sm text-gray-600 mt-2">릴리즈 1.0 배포 D-day</p>
+                            </div>
+                            <div class="text-center">
+                                <img alt="사용자 피드백 및 개선사항" class="w-full rounded-lg shadow-md border clickable-image" src="./images/feedbacks.png">
+                                <p class="text-sm text-gray-600 mt-2">UT 결과 사용자 피드백</p>
                             </div>
                         </div>
 
-                        <!-- 오른쪽: 해결 과정 -->
-                        <div class="md:w-2/3">
-                            <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-                                <h4 class="font-bold text-lg text-blue-700 mb-4 flex items-center">
-                                    <i class="fas fa-lightbulb mr-2"></i>해결 과정
-                                </h4>
+                        <!-- 해결 과정 -->
+                        <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+                            <h4 class="font-bold text-lg text-blue-700 mb-4 flex items-center">
+                                <i class="fas fa-lightbulb mr-2"></i>해결 과정
+                            </h4>
 
-                                <div class="space-y-4">
-                                    <!-- 품질 자동화 -->
-                                    <div>
-                                        <h5 class="font-semibold text-blue-600 mb-2">📊 품질 자동화로 코드 리뷰 문화 고도화</h5>
-                                        <p class="text-gray-600 text-sm mb-3"><code class="tag">SonarQube</code>, <code
-                                                class="tag">Jacoco</code>를
-                                            GitHub Actions CI/CD 파이프라인에 통합하여 코드 품질을 자동으로 검증했습니다. Quality Gate 실패 시 배포
-                                            차단으로 예기치 못한
-                                            버그를 사전에 탐지하고 불필요한 코드 리뷰 시간을 단축했습니다.</p>
-                                        
-                                    </div>
+                            <div class="space-y-4">
+                                <!-- 품질 자동화 -->
+                                <div>
+                                    <h5 class="font-semibold text-blue-600 mb-2">📊 품질 자동화로 코드 리뷰 문화 고도화</h5>
+                                    <p class="text-gray-600 text-sm mb-3"><code class="tag">SonarQube</code>, <code class="tag">Jacoco</code>를
+                                        GitHub Actions CI/CD 파이프라인에 통합하여 코드 품질을 자동으로 검증했습니다. Quality Gate 실패 시 배포
+                                        차단으로 예기치 못한
+                                        버그를 사전에 탐지하고 불필요한 코드 리뷰 시간을 단축했습니다.</p>
+                                </div>
 
-                                    <!-- 무중단 배포 -->
-                                    <div>
-                                        <h5 class="font-semibold text-blue-600 mb-2">🚀 Blue-Green 무중단 배포 및 정기 백업 시스템
-                                            구축</h5>
-                                        <p class="text-gray-600 text-sm mb-3">실시간 사용자에게 서비스 제공 필요로 <code class="tag">Blue-Green</code>
-                                            배포 전략과 <code class="tag">Health Check</code>를 도입했습니다.
-                                            <code class="tag">Docker Compose</code> 기반 컨테이너 전환과 <code class="tag">Crontab</code>
-                                            일
-                                            1회 자동 백업으로 운영 중단 없는 안정적인 배포 환경을 구축했습니다.</p>
+                                <!-- 무중단 배포 -->
+                                <div>
+                                    <h5 class="font-semibold text-blue-600 mb-2">🚀 Blue-Green 무중단 배포 및 정기 백업 시스템
+                                        구축</h5>
+                                    <p class="text-gray-600 text-sm mb-3">실시간 사용자에게 서비스 제공 필요로 <code class="tag">Blue-Green</code>
+                                        배포 전략과 <code class="tag">Health Check</code>를 도입했습니다.
+                                        <code class="tag">Docker Compose</code> 기반 컨테이너 전환과 <code class="tag">Crontab</code>
+                                        일
+                                        1회 자동 백업으로 운영 중단 없는 안정적인 배포 환경을 구축했습니다.</p>
+                                </div>
 
-                                    </div>
-
-                                    <!-- 사용자 테스트 주도 -->
-                                    <div>
-                                        <h5 class="font-semibold text-blue-600 mb-2">👥 사용자 테스트(UT)를 주도하여 사용자 피드백 기반의 서비스 개발 문화에 기여</h5>
-                                        <p class="">
-개발 방향성에 대한 객관적인 데이터가 부족하여 팀의 개발 우선순위가 주관적 판단에 의해 결정되는 문제를 발견했습니다.
-</p> <p> 이를 해결하고자 사용자 테스트를 주도하여 정성적 데이터를 확보했고, 이를 근거로 팀의 개발 목표를 핵심 기능 및 유저 중심으로 재설정했습니다.</p> <br>해당 경험을 통해 팀 전체가 사용자의 목소리에 기반하여 움직이는 문화를 구축하며 팀의 원동력이 되었고 <p>불필요한 기능이 아닌 사용자에게 필요한 기능을 빠르게 제공하는 목표에만 집중할 수 있었습니다. </p>
-                                        </p>
-                                    </div>
+                                <!-- 사용자 테스트 주도 -->
+                                <div>
+                                    <h5 class="font-semibold text-blue-600 mb-2">👥 사용자 테스트(UT)를 주도하여 사용자 피드백 기반의 서비스 개발 문화에 기여</h5>
+                                    <p class="">개발 방향성에 대한 객관적인 데이터가 부족하여 팀의 개발 우선순위가 주관적 판단에 의해 결정되는 문제를 발견했습니다.</p>
+                                    <p>이를 해결하고자 사용자 테스트를 주도하여 정성적 데이터를 확보했고, 이를 근거로 팀의 개발 목표를 핵심 기능 및 유저 중심으로 재설정했습니다.</p>
+                                    <br>해당 경험을 통해 팀 전체가 사용자의 목소리에 기반하여 움직이는 문화를 구축하며 팀의 원동력이 되었고 <p>불필요한 기능이 아닌 사용자에게 필요한 기능을 빠르게 제공하는 목표에만 집중할 수 있었습니다.</p>
                                 </div>
                             </div>
                         </div>
@@ -673,78 +837,6 @@
                 </article>
 
 
-            </div>
-        </section>
-
-        <!-- Project Introduction Section -->
-        <section class="mt-12" id="project">
-            <h2 class="text-3xl font-bold text-center mb-10 fade-in-up" style="animation-delay: 0.1s;">프로젝트 상세 소개 |
-                Project
-                Specific Overview</h2>
-
-            <div class="space-y-8">
-                <!-- Matilda Project -->
-                <article class="section-card bg-white p-10 rounded-xl shadow-md fade-in-up"
-                         style="animation-delay: 0.3s;">
-                    <div class="lg:flex lg:space-x-8">
-                        <!-- 주요 특징 (왼쪽) -->
-
-
-                        <!-- 프로젝트 정보 (중앙) -->
-                        <div class="lg:w-3/3">
-                            <div class="text-center lg:text-left mb-6">
-                                <i class="fas fa-code text-5xl text-indigo-500"></i>
-                                <h3>
-                                    <a class="text-2xl font-bold mt-4 text-indigo-600 hover:text-indigo-800 transition-colors duration-200"
-                                       href="https://matilda.woowacourse.com/all-tag"
-                                       target="_blank">마틸다(Matilda)
-                                    </a>
-
-                                </h3>
-                                <p class="text-gray-500">2025.04 ~ 2025.07</p>
-                                <a href="https://github.com/TilGuy/BE_TilGuy" target="_blank">GitHub Repository 링크</a>
-                            </div>
-
-                            <h4 class="font-bold text-lg text-gray-700 mb-4">프로젝트 상세 소개</h4>
-                            <p class="text-gray-600 mb-4">우아한테크코스 과정 중, 약 40명 크루들의 스터디 기록 공유의 불편함을 해소하고자 시작한 교육과정 외 사이드
-                                프로젝트입니다. 개발자 학습 공유 플랫폼으로, 여러 메신저에 파편화된 학습 자료를 AI 기반 태그 자동 분류로 체계적으로 공유하며 집단지성 형성에 도움을 주는
-                                서비스입니다. 실시간 피드백을 반영하며 100명가량의 지속 사용자를 유치하고 안정적인 서비스를 운영한 경험을 쌓았습니다.</p>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <h5 class="font-bold text-gray-700 mb-2"><i
-                                            class="fas fa-users text-indigo-500"></i> 개발 인원</h5>
-                                    <p class="text-gray-600">백엔드 개발자 3명</p>
-                                </div>
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <h5 class="font-bold text-gray-700 mb-2"><i
-                                            class="target text-indigo-500"></i> 핵심 가치</h5>
-                                    <p class="text-gray-600">집단지성 기반 학습 문화 형성</p>
-                                </div>
-                            </div>
-
-                            <h4 class="font-bold text-lg text-gray-700 mb-4 mt-6">서비스 화면</h4>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                                <div class="text-center">
-                                    <img alt="마틸다 메인 화면" class="w-full rounded-lg shadow-md border clickable-image"
-                                         src="./images/matilda-usage-main.png">
-                                    <p class="text-sm text-gray-600 mt-2">마틸다 메인 대시보드 - TIL 목록 및 태그 분류</p>
-                                </div>
-                                <div class="text-center">
-                                    <img alt="마틸다 상세 화면" class="w-full rounded-lg shadow-md border clickable-image"
-                                         src="./images/matilda-usage-detail.png">
-                                    <p class="text-sm text-gray-600 mt-2">집단지성 그래프 검색 기능</p>
-                                </div>
-                            </div>
-
-                            <div class="bg-indigo-100 border-l-4 border-indigo-500 text-indigo-700 p-4 rounded-md">
-                                <p class="font-bold">성과: Active User <span
-                                        class="text-xl">약 40명에게 실제 서비스 가치 제공</span>, 안정적인 실시간 서비스 운영 달성
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
             </div>
         </section>
 
@@ -819,115 +911,6 @@
 
             </div>
 
-        </section>
-
-        <!-- Project Evolution Section -->
-        <section class="mt-12" id="evolution">
-            <h2 class="text-3xl font-bold text-center mb-10 fade-in-up" style="animation-delay: 0.2s;">프로젝트 발전 과정 |
-                Project Evolution</h2>
-
-            <div class="space-y-8">
-                <!-- Changelog Timeline -->
-                <article class="section-card bg-white p-10 rounded-xl shadow-md fade-in-up"
-                         style="animation-delay: 0.4s;">
-                    <div class="md:flex items-center">
-                        <div class="md:w-1/3 text-center md:text-left mb-6 md:mb-0">
-                            <i class="fas fa-code-branch text-5xl text-purple-500"></i>
-                            <h3 class="text-2xl font-bold mt-4">지속적인 서비스 발전</h3>
-                            <p class="text-gray-500">v0.9.0 → v1.3.2</p>
-                            <div class="mt-4">
-                                <a class="text-purple-600 hover:text-purple-800 text-sm"
-                                   href="https://github.com/TilGuy/BE_TilGuy/blob/main/docs/Changelog.md"
-                                   target="_blank">
-                                    <i class="fab fa-github"></i> 전체 Changelog 보기
-                                </a>
-                            </div>
-                        </div>
-                        <div class="md:w-2/3 md:pl-8">
-                            <h4 class="font-bold text-lg text-gray-700 mb-4">주요 버전별 발전 과정</h4>
-
-                            <!-- Timeline -->
-                            <div class="space-y-4">
-                                <!-- v1.3.x - 성능 최적화 단계 -->
-                                <div class="border-l-4 border-purple-500 pl-6 pb-4">
-                                    <div class="flex items-center mb-2">
-                                        <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">v1.3.x</span>
-                                        <span class="text-sm text-gray-500">2025.06.25 - 2025.06.30</span>
-                                    </div>
-                                    <h5 class="font-bold text-purple-700 mb-1">성능 최적화 및 사용자 경험 개선</h5>
-                                    <ul class="text-sm text-gray-600 space-y-1">
-                                        <li>• TIL 공유 기능 및 마크다운 복사 기능 추가</li>
-                                        <li>• 태그 연관관계 구조 개선 및 캐싱 적용</li>
-                                        <li>• TIL 전체/범위 조회 성능 최적화</li>
-                                    </ul>
-                                </div>
-
-                                <!-- v1.2.x - 안정성 강화 단계 -->
-                                <div class="border-l-4 border-blue-500 pl-6 pb-4">
-                                    <div class="flex items-center mb-2">
-                                        <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">v1.2.x</span>
-                                        <span class="text-sm text-gray-500">2025.06.20 - 2025.06.23</span>
-                                    </div>
-                                    <h5 class="font-bold text-blue-700 mb-1">시스템 안정성 및 품질 강화</h5>
-                                    <ul class="text-sm text-gray-600 space-y-1">
-                                        <li>• 무중단 배포 시스템 구축</li>
-                                        <li>• 전체 리팩터링 및 테스트 코드 대폭 확충</li>
-                                        <li>• JaCoCo 도입으로 코드 커버리지 보장</li>
-                                        <li>• AI 프롬프트 정교화 및 태그 정규화</li>
-                                    </ul>
-                                </div>
-
-                                <!-- v1.1.x - 모니터링 및 기능 확장 -->
-                                <div class="border-l-4 border-green-500 pl-6 pb-4">
-                                    <div class="flex items-center mb-2">
-                                        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">v1.1.x</span>
-                                        <span class="text-sm text-gray-500">2025.06.01 - 2025.06.16</span>
-                                    </div>
-                                    <h5 class="font-bold text-green-700 mb-1">기능 확장 및 모니터링 도입</h5>
-                                    <ul class="text-sm text-gray-600 space-y-1">
-                                        <li>• 레퍼런스 기능 및 서브 태그 시스템 구현</li>
-                                        <li>• Prometheus + Grafana 모니터링 시스템 구축</li>
-                                        <li>• TIL 태그 요약 및 페이징 기능 추가</li>
-                                    </ul>
-                                </div>
-
-                                <!-- v1.0.x - 핵심 기능 완성 -->
-                                <div class="border-l-4 border-orange-500 pl-6 pb-4">
-                                    <div class="flex items-center mb-2">
-                                        <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">v1.0.x</span>
-                                        <span class="text-sm text-gray-500">2025.05.20</span>
-                                    </div>
-                                    <h5 class="font-bold text-orange-700 mb-1">핵심 서비스 기능 완성</h5>
-                                    <ul class="text-sm text-gray-600 space-y-1">
-                                        <li>• TIL 북마크 및 목록 정렬 기능</li>
-                                        <li>• TIL 수정/삭제 CRUD 완성</li>
-                                        <li>• 주요 버그 해결 및 안정화</li>
-                                    </ul>
-                                </div>
-
-                                <!-- v0.9.x - 초기 시스템 구축 -->
-                                <div class="border-l-4 border-gray-500 pl-6">
-                                    <div class="flex items-center mb-2">
-                                        <span class="bg-gray-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">v0.9.x</span>
-                                        <span class="text-sm text-gray-500">2025.05.07</span>
-                                    </div>
-                                    <h5 class="font-bold text-gray-700 mb-1">초기 시스템 구축</h5>
-                                    <ul class="text-sm text-gray-600 space-y-1">
-                                        <li>• TIL 작성/조회 기본 기능 구현</li>
-                                        <li>• GitHub OAuth 로그인 연동</li>
-                                        <li>• 인증/인가 시스템 기반 구축</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-4 rounded-md mt-6">
-                                <p class="font-bold">성과: <span class="text-xl">3개월간 14개 버전</span> 지속적인 발전, 기능 + 성능 + 안정성
-                                    단계적 개선</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
         </section>
 
         <!-- Career & Education Section -->
